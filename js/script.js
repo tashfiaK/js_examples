@@ -93,3 +93,22 @@ const main = {
  function toCelsius(){
     document.getElementsByClassName("temperature")[0].innerHTML = value;
  }
+ //ex -17
+ let prompt = "Find out the location of the word 'location' : ";
+ let output = prompt.search(/location/);
+
+ function showSearchResult(){
+    document.getElementsByClassName("s_method")[0].innerHTML = output;
+ }
+// ex-18
+let prompt_2 = "Find out the location of the word 'location' :";
+let output_2 = prompt_2.search("location");
+function showPosition(){
+    document.getElementsByClassName("s_method")[1].innerHTML = output_2;
+}
+// ex -19
+function replace() {
+    let prompt_3 = document.getElementById('replaceResult').innerHTML;
+    document.getElementById('replaceResult').innerHTML = prompt_3.replace("12PM" , "1PM");
+}
+
